@@ -1,0 +1,4 @@
+digraph test123 {
+ a -> b -> c;
+ b -> d;
+}
