@@ -14,7 +14,6 @@ function setRenderer(dot_button_element,
                      output_element) {
   $(dot_button_element).click(function (e) {
     e.preventDefault();
-    alert("Hello");
     var d = $(dot_source_element).val();
     $.post(graphviz_server_path, d, function(data) {
       $(output_element).html('<img src=\"data:image/png;base64,' + data + '\" />');

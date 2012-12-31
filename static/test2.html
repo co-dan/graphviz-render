@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+<script type="text/javascript" src="/client.js"></script>
+<script type="text/javascript" src="/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  setRenderer('#dot_submit', '#code', '/graphviz/', '#preview')
+});
+</script>
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+
+<h1>Graphviz-render</h1>
+
+<div id="main">
+    <div class="mathb">
+        <noscript>
+        <div class="noscript">
+        <p>
+        JavaScript must be enabled to use this website.
+        </p>
+        </div>
+        </noscript>
+
+        <div class="output">
+            <div id="sheet">
+                <div id="preview">
+                
+
+
+                </div> <!-- End preview -->
+            </div> <!-- End panel -->
+                    </div> <!-- End output -->
+
+        <div class="input">
+            <div id="form">
+                <form name="dot_form" method="post">
+
+                    <label for="code">Code:</label>
+                    <textarea id="code" name="code"
+                              required="required">
+digraph test123 {
+ a -> b -> c;
+ b -> d;
+}                     
+                    </textarea>
+
+                    <input type="button" id="dot_submit"
+                           value="Render">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Mon Dec 31 18:32:09 MSK 2012 <!-- hhmts end -->
+</body> </html>
