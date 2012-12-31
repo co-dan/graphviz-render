@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+<script type="text/javascript" src="/client.js"></script>
+<script type="text/javascript" src="/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  mcDrawGraphviz('#graphviz_source', '/graphviz/', '#dot_img')
+});
+</script>
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+<h1>hello there</h1>
+
+<div id="dot_img">
+  <pre type="text/graphviz" id="graphviz_source">
+digraph finite_state_machine {
+  rankdir=LR;
+  size="8,5"
+  node [shape = doublecircle]; LR_0 LR_3 LR_4 LR_8;
+  node [shape = circle];
+  LR_0 -> LR_2 [ label = "SS(B)" ];
+  LR_0 -> LR_1 [ label = "SS(S)" ];
+  LR_1 -> LR_3 [ label = "S($end)" ];
+  LR_2 -> LR_6 [ label = "SS(b)" ];
+  LR_2 -> LR_5 [ label = "SS(a)" ];
+  LR_2 -> LR_4 [ label = "S(A)" ];
+  LR_5 -> LR_7 [ label = "S(b)" ];
+  LR_5 -> LR_5 [ label = "S(a)" ];
+  LR_6 -> LR_6 [ label = "S(b)" ];
+  LR_6 -> LR_5 [ label = "S(a)" ];
+  LR_7 -> LR_8 [ label = "S(b)" ];
+  LR_7 -> LR_5 [ label = "S(a)" ];
+  LR_8 -> LR_6 [ label = "S(b)" ];
+  LR_8 -> LR_5 [ label = "S(a)" ];
+}
+</pre>
+</div>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Mon Dec 31 18:04:28 MSK 2012 <!-- hhmts end -->
+</body> </html>
