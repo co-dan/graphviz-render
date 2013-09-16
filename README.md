@@ -33,17 +33,17 @@ Dynamic rendering can be done with simple AJAX code
    `cabal update`
     
 2. Make sure you have [Graphviz](http://graphviz.org) installed
-3. Download and install a slightly modified version of Scotty:
+3. Download and install Scotty:
 
     ````
-    git clone git://github.com/co-dan/scotty.git
+    git clone git://github.com/xich/scotty.git
     cd scotty; cabal install
     ```
 
 4. Check out the source code to your machine and build it:
 
     ```
-    git clone git@github.com:co-dan/graphviz-render.git
+    git clone git://github.com/co-dan/graphviz-render.git
     cd graphviz-render
     cabal build
     ```
