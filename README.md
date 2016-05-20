@@ -28,16 +28,15 @@ Dynamic rendering can be done with simple AJAX code
 
 # Set up guide 
 
-1. Download [Haskell platform](http://hackage.haskell.org/platform/) and update the repository information:
+1. Download [Haskell platform](http://hackage.haskell.org/platform/) (or obtain Haskell in any other way) and update the repository information:
 
    `cabal update`
     
 2. Make sure you have [Graphviz](http://graphviz.org) installed
-3. Download and install Scotty:
+3. Install [scotty](http://github.com/scotty-web/scotty) using cabal:
 
     ````
-    git clone git://github.com/xich/scotty.git
-    cd scotty; cabal install
+    cabal install scotty
     ```
 
 4. Check out the source code to your machine and build it:
@@ -49,4 +48,5 @@ Dynamic rendering can be done with simple AJAX code
     ```
 
 Then you can run the graphviz-render binary and you'll get a server running on port 3000
-5. Play around with test.html and test2.html files
+
+5. Play around with `test.html` and `test2.html`.
